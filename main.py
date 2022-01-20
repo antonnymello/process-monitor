@@ -1,5 +1,3 @@
-from asyncio.windows_events import NULL
-import os
 from time import sleep
 import psutil
 from openpyxl import load_workbook
@@ -55,5 +53,3 @@ while True:
               process_pid, 'is:', memory_usage_in_mb, 'MB')
 
     sleep(60)
-
-# print(get_memory_usage_by_pid(process_list.pid))
